@@ -7,7 +7,7 @@ public class Loader
         Cat cat = new Cat();
         Cat musia = new Cat();
         Cat vasia = new Cat();
-
+/*
         System.out.println("Вес Муси - " + musia.getWeight());
         System.out.println("Вес Васи - " + vasia.getWeight());
 
@@ -23,7 +23,9 @@ public class Loader
             vasia.feed(3000.2);
             System.out.println(vasia.getWeight());
             System.out.println(vasia.getStatus());
+            */
+
+musia.feed(666.2);
         }
 
     }
-}

@@ -3,9 +3,11 @@ public class Cat
 {
     private double originWeight;
     private double weight;
+    public double weightFeed;
 
     private double minWeight;
     private double maxWeight;
+    
 
     public Cat()
     {
@@ -24,7 +26,8 @@ public class Cat
 
     public void feed(Double amount)
     {
-        weight = weight + amount;
+        weightFeed = weight + amount;
+        System.out.println("Животное съело - " + massOfFoodEaten());
     }
 
     public void drink(Double amount)
@@ -51,5 +54,16 @@ public class Cat
         else {
             return "Playing";
         }
+
+
+    }
+    public double massOfFoodEaten() {
+        double weightOfFoodEaten = weightFeed - weight;
+        return weightOfFoodEaten;
+    }
+
+    public void goingToToilet (Double amount) {
+        weight = weight - amount;
+        System.out.println("Сходили в туалет, вес уменьшился и составляет - " + weight);
     }
 }
